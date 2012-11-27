@@ -12,3 +12,7 @@ Label::Label(const std::string &name) {
     mPosition = new uint16_t(0);
     mDefined = false;
 }
+
+Label::~Label() {
+    delete mPosition;
+}

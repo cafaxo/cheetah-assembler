@@ -15,6 +15,8 @@ class Label {
 public:
     Label(const std::string &name);
     
+    ~Label();
+    
     void addUsageLocation(const int &usageLocation) { mUsageLocations.push_back(usageLocation); }
     
     void setPosition(uint16_t position) { *mPosition = position; }
